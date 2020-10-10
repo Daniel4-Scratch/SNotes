@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+
+  <!--Drag element-->
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <style>
+  #draggable { width: 0px; height: 0px; padding: 0.5em; border:0px; }
+  #draggable:hover {cursor:grab;}
+  #draggable:active {cursor:grabbing;}
+  </style>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+
+<!--End of Drag element-->
+
+</head>
+<body>
+ 
+<div id="draggable" class="ui-widget-content">
+  <img src="https://niallsweeney98.files.wordpress.com/2014/03/14.jpg" width="200">
+</div>
+ 
+ 
+</body>
+</html>
