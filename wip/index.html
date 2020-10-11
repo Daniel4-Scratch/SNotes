@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>W.I.P | DoubleDip </title>
+  <title>Sticky Notes </title>
 
   <!--Drag element-->
 
@@ -23,15 +23,23 @@
   $( function() {
     $( "#draggable" ).draggable();
   } );
+    
+    function searchf(){ 
+         var number=document.getElementById("snote").value;  
+         document.body.innerHTML += '<div id="draggable" class="ui-widget-content">'+number+'</div'
+  } 
   </script>
 
 <!--End of Drag element-->
 
 </head>
 <body>
- 
+ <div id="draggable" class="ui-widget-content">
+  Create Stick note:<br>
+   <input id="snote"> <button onclick="searchf">Create</button>
+</div>
 <div id="draggable" class="ui-widget-content">
-  <img src="https://daniel4-scratch.github.io/DoubleDip/wip/Block.png" width="200">
+  Test
 </div>
  
  
